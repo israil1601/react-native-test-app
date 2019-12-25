@@ -13,13 +13,13 @@ const styles = StyleSheet.create({
   header: {
     width: '100%',
     height: 45,
-    backgroundColor: '#000000FF',
+    backgroundColor: '#f7f8ff',
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
     fontSize: 18,
-    color: '#fff',
+    color: '#000000FF',
   },
 });
 

@@ -96,7 +96,7 @@ const App = () => {
           TouchableComponent={TouchableHighlight}
         />
       </View>
-      <ScrollView>
+      <ScrollView style={{marginBottom: 10}}>
         {channels.map(item => {
           return (
             <PlayList
@@ -117,7 +117,7 @@ const App = () => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#000000FF',
+    backgroundColor: '#f7f8ff',
   },
   video: {
     alignSelf: 'stretch',
@@ -125,15 +125,16 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
-    borderWidth: 2,
     justifyContent: 'space-around',
   },
   buttonStyle: {
     margin: 10,
-    borderColor: 'white',
+    backgroundColor: 'white',
+    borderColor: '#e8e8e8',
+    borderWidth: 1,
   },
   titleStyle: {
-    color: 'white',
+    color: '#000000FF',
   },
 });
 
