@@ -87,6 +87,14 @@ const App = () => {
           titleStyle={styles.titleStyle}
           TouchableComponent={TouchableHighlight}
         />
+        <Button
+          title="Next Video"
+          onPress={nextVideoHandler}
+          type="outline"
+          buttonStyle={styles.buttonStyle}
+          titleStyle={styles.titleStyle}
+          TouchableComponent={TouchableHighlight}
+        />
       </View>
       <ScrollView>
         {channels.map(item => {
@@ -117,8 +125,8 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
-    width: '90%',
     borderWidth: 2,
+    justifyContent: 'space-around',
   },
   buttonStyle: {
     margin: 10,
