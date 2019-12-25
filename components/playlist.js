@@ -15,6 +15,7 @@ const Playlist = props => {
         onPress={() => {
           props.changePlaylist(props.id);
         }}
+        disabled={props.id === props.currentChannelId}
         TouchableComponent={TouchableOpacity}
       />
     </Card>

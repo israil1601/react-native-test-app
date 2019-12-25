@@ -105,7 +105,7 @@ const App = () => {
               name={item.name}
               changePlaylist={changePlaylist}
               key={item.id}
-              length={currentPlaylist.length}
+              currentChannelId={currentChannelId}
             />
           );
         })}
